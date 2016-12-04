@@ -1,0 +1,22 @@
+@mixin flex {
+	display: flex;
+	justify-content : center;
+	align-items: center;
+}
+
+.formulario-login {
+	.row {
+		margin-bottom: 0px;
+	}
+
+	figure {
+		margin-bottom: 0;
+		@include flex;
+	}
+
+	.lembre-me {
+		margin-bottom: 20px !important;
+		margin-top: 0;
+	}
+
+}
