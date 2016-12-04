@@ -13,9 +13,7 @@
 
 	<link rel="stylesheet" href="css/style.css">
 	
-	<script src="js/jquery.min.js"></script>
-	<script src="js/materialize.min.js"></script>
-	<script src="js/script.js"></script>
+
 	
 
 </head>
@@ -60,23 +58,23 @@
 
 		<ul class="tabs grey darken-4">
 			<li class="tab">
-				<a href="#" class="waves-effect white-text home">
+				<a href="#" class="waves-effect waves-light white-text home">
 					<i class="material-icons">home</i>
 				</a>
 			</li>
 			<li class="tab">
-				<a href="#" class="waves-effect white-text filmes">
+				<a href="#" class="waves-effect waves-light white-text filmes">
 					<i class="material-icons">local_movies</i>
 				</a>
 			</li>
 			
 			<li class="tab">
-				<a href="#" class="waves-effect white-text favoritar">
+				<a href="#" class="waves-effect waves-light white-text favoritos">
 					<i class="material-icons">favorite</i>
 				</a>
 			</li>
 			<li class="tab">
-				<a href="#" class="waves-effect white-text noticias">
+				<a href="#" class="waves-effect waves-light white-text noticias">
 					<i class="material-icons">rss_feed</i>
 				</a>
 			</li>
@@ -176,7 +174,7 @@
 				</div>
 
 				<div class="fixed-action-btn">
-					<a class="btn-floating btn-large waves-effect waves-light black enviar-pedido">
+					<a href="#novo-filme" id="adicionar-filme" class="btn-floating btn-large waves-effect waves-light black modal-trigger" data-target="#novo-filme">
 						<i class="large material-icons" style="color: yellow">add</i>
 					</a>	
 				</div>
@@ -184,10 +182,36 @@
 
 			<!-- FIM AREA DE FILMES-->
 
+			<!-- AREA DE FAVORITOS-->
+			<section id="dados-favoritos" class="hide">
+				<div>
+					<h5 class="center-align">Meus Favoritos</h5>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m7">
+						<div class="card">
+							<div class="card-image">
+								<div class="video-container">
+									<iframe width="853" height="480" src="https://www.youtube.com/embed/OWNg_B0rsy0" frameborder="0" allowfullscreen></iframe>
+								</div>
+								<span class="card-title">Card Title</span>
+							</div>
+							<div class="card-content">
+								<p>Documentário vencedor do 31º Prêmio Vladimir Herzog de Direitos Humanos em 2009 na categoria "Melhor Documentário de TV", vencedor do festival 2010 do Cine Favela</p>
+							</div>
+							<div class="card-action">
+								<a href="#">Comentarios</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- AREA DE FAVORITOS-->
 
 
 			<!-- AREA DE NOTICIAS-->
-			
+
 			<section id="dados-noticias" class="hide">
 				<div>
 					<h5 class="center-align">Informativos do Cine</h5>
@@ -202,15 +226,15 @@
 							</div>
 							<div class="card-content">
 								<p>Estão aberta as inscrições para as aulas de capoeira com o Mestre Moreno, campeão paulista e vice campeao mundial da modalidade, as aulas sao gratuitas.</p>
-								</div>
-								<div class="card-action">
-									<a href="#">Fazer Inscrição</a>
-								</div>
+							</div>
+							<div class="card-action">
+								<a href="#">Fazer Inscrição</a>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<div class="row">
+				<div class="row">
 					<div class="col s12 m7">
 						<div class="card">
 							<div class="card-image">
@@ -219,16 +243,16 @@
 							</div>
 							<div class="card-content">
 								<p>Inscrições aberta para aulas de teatro aos moradores, trazendo cultura e oportunidades de seguir carreira, em parceria com a instituição Wolf Maia do Rio de Janeiro</p>
-								</div>
-								<div class="card-action">
-									<a href="#">Fazer Inscrição</a>
-								</div>
+							</div>
+							<div class="card-action">
+								<a href="#">Fazer Inscrição</a>
 							</div>
 						</div>
 					</div>
+				</div>
 
 
-					<div class="row">
+				<div class="row">
 					<div class="col s12 m7">
 						<div class="card">
 							<div class="card-image">
@@ -237,20 +261,72 @@
 							</div>
 							<div class="card-content">
 								<p>Aberta inscrições para aulas de street dance para crianças e jovens, com os professores, Ju Donato e Marcelo Reis, campeões paulistas com a academia 100% Heliopolis</p>
-								</div>
-								<div class="card-action">
-									<a href="#">Fazer Inscrição</a>
-								</div>
+							</div>
+							<div class="card-action">
+								<a href="#">Fazer Inscrição</a>
 							</div>
 						</div>
 					</div>
+				</div>
 			</section>
 
 			<!-- AREA DE NOTICIAS-->
-			</main>
 
 
 
-		</body>
+		</main>
 
-		</html>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/materialize.min.js"></script>
+		<script src="js/script.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				$('#adicionar-filme').click(function() {
+					$('.modal-trigger').leanModal();
+				});
+			});
+		</script>
+	</body>
+
+	<div id="novo-filme" class="modal">
+		<div class="modal-content">
+			<h6 class="center">Dados do Filme</h6>
+			<div class="row">
+				<form class="col s12">
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="nome" type="text">
+							<label for="nome-filme">Nome do Filme</label>
+						</div>
+
+						<div class="input-field col s12">
+							<input id="diretor" type="text">
+							<label for="diretor">Diretor</label>
+						</div>
+
+						<div class="input-field col s12">
+							<input id="url" type="text">
+							<label for="url-filme">URL</label>
+						</div>
+
+						<div class="input-field col s12">
+							<input id="nome" type="text">
+							<label for="nome-filme">Nome do Filme</label>
+						</div>
+
+						<div class="input-field col s12">
+							<input id="genero" type="text">
+							<label for="genero">Genero</label>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class=" modal-action modal-close waves-effect waves-gray btn-flat grey enviar-dados-do-filme">Enviar</a>
+		</div>
+	</div>
+
+	</html>

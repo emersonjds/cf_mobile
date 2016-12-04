@@ -16,21 +16,34 @@ $(document).ready(function() {
 		$('.dados-home').removeClass('hide');
 		$('.dados-home').addClass('show');
 		$('#dados-filme').addClass('hide');
+		$('#dados-favoritos').addClass('hide');
+		$('#dados-noticias').addClass('hide');
 	});
 	
 
 	$('.filmes').on('click', function() {
-		$('.dados-home').addClass('hide');
 		$('#dados-filme').removeClass('hide');
 		$('#dados-filme').addClass('show');
+		$('.dados-home').addClass('hide');
+		$('#dados-favoritos').addClass('hide');
+		$('#dados-noticias').addClass('hide');
+	});
+
+	$('.favoritos').on('click', function() {
+		$('.dados-home').addClass('hide');
+		$('#dados-filmes').addClass('hide');
+		$('#dados-noticias').addClass('hide');
+		$('#dados-favoritos').removeClass('hide');
+		$('#dados-favoritos').addClass('show');
+
 	});
 
 	$('.noticias').on('click', function() {
-		$('.dados-home').addClass('hide');
-		$('#dados-filme').addClass('hide');
 		$('#dados-noticias').removeClass('hide');
 		$('#dados-noticias').addClass('show');
+		$('.dados-home').addClass('hide');
+		$('#dados-filme').addClass('hide');
+		$('#dados-favoritos').addClass('hide');
+		
 	});
-
-
 });
