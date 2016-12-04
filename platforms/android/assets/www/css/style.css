@@ -1,12 +1,51 @@
-.bar .indicators {
-	background-color: #fff;
-}
+.formulario-login .row {
+  margin-bottom: 0px; }
+.formulario-login figure {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+.formulario-login .lembre-me {
+  margin-bottom: 20px !important;
+  margin-top: 0; }
 
 .topo-fixo {
-	width: 100%;
-}
+  width: 100%; }
 
 .titulo {
-	margin-left: 1.3rem;
-	margin-right: auto;
-}
+  margin-left: 1.3rem;
+  margin-right: auto; }
+
+.tabs .indicator {
+  background-color: yellow; }
+
+.user {
+  margin-top: 10px; }
+
+.menu {
+  margin-left: .5em; }
+
+#slide-out {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start !important;
+  flex-direction: column; }
+  #slide-out .userView {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+main {
+  height: 100%;
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

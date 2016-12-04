@@ -15,108 +15,242 @@
 	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/materialize.min.js"></script>
+	<script src="js/script.js"></script>
 	
 
 </head>
 
 <body>
-	<header>
-		<div class="topo-fixo z-depth-1">
-			IMAGEM AQUI 
+	<header class="grey darken-4">
+		<nav class="grey darken-4">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo center">Logo</a>
 
-			<div class="grey darken-4 white-text valign-wrapper">
-				<h5 class="titulo">Cine Favela</h5>
+				<ul id="slide-out" class="side-nav grey darken-4">
+					<li>
+						<div class="userView">
+							<a class="user" href="#!user">
+								<img class="circle" src="http://uc48.net/europeana/images/fpo_avatar.png" height="40px" width="40">
+							</a>
+							<a href="#!name">
+								<span class="white-text name">John Doe</span>
+							</a>
+							<a href="#!email">
+								<span class="white-text email">jdandturk@gmail.com</span>
+							</a>
+						</div>
+					</li>
+					
+					<li>
+						<div class="divider"></div>
+					</li>
+					<li>
+						<a class="waves-effect" href="#!">Configurações</a>
+					</li>
+					<li>
+						<a class="waves-effect" href="#!">Sair</a>
+					</li>
+				</ul>
+				<a href="#" data-activates="slide-out" class="button-collapse">
+					<i class="material-icons menu">menu</i>
+				</a>
+			</div>
+		</nav>		
+
+
+		<ul class="tabs grey darken-4">
+			<li class="tab">
+				<a href="#" class="waves-effect white-text home">
+					<i class="material-icons">home</i>
+				</a>
+			</li>
+			<li class="tab">
+				<a href="#" class="waves-effect white-text filmes">
+					<i class="material-icons">local_movies</i>
+				</a>
+			</li>
+			
+			<li class="tab">
+				<a href="#" class="waves-effect white-text favoritar">
+					<i class="material-icons">favorite</i>
+				</a>
+			</li>
+			<li class="tab">
+				<a href="#" class="waves-effect white-text noticias">
+					<i class="material-icons">rss_feed</i>
+				</a>
+			</li>
+		</ul>	
+	</header>	
+
+
+	<main>
+
+		<section class="dados-home">
+			<div class="valign-wrapper">
+				<h5>Ultimos Filmes Adicionados</h5>
+			</div>
+
+			<div class="row">
+				<div class="col s12">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<div class="video-container">
+								<iframe width="853" height="480" src="https://www.youtube.com/embed/0IdclBMo-vw" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Nome do Filme<i class="material-icons right">more_vert</i>
+							</span>
+							<div class="icons" style="display: flex;">
+								<p><a href="#"><i class="fa fa-thumbs-o-up fa-2x curtir" style="margin-right: 5px;"></i></a></p>
+								<p><a href="#"><i class="fa fa-heart fa-2x" style="margin-right: 5px;"></i></a></p>
+								<p><a href="#"><i class="fa fa-facebook-official fa-2x" style="margin-right: 5px;"></i></a></p>
+								<p><a href="#"><i class="fa fa-twitter fa-2x"></i></a></p>
+							</div>
+						</div>
+
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+							<p>Here is some more information about this product that is only revealed once clicked on.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col s12">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<div class="video-container">
+								<iframe width="853" height="480" src="https://www.youtube.com/embed/0IdclBMo-vw" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Nome do Filme<i class="material-icons right">more_vert</i>
+							</span>
+							<div class="icons" style="display: flex;">
+								<p><a href="#"><i class="fa fa-heart fa-2x" style="margin-right: 5px;"></i></a></p>
+								<p><a href="#"><i class="fa fa-facebook-official fa-2x" style="margin-right: 5px;"></i></a></p>
+								<p><a href="#"><i class="fa fa-twitter fa-2x"></i></a></p>
+							</div>
+
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>s
+							<p>Here is some more information about this product that is only revealed once clicked on.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- AREA DE FILMES -->
+
+		<section id="dados-filme" class="hide">
+			<div class="row">
+				<div class="col s12">
+					<div class="input-field">
+						<i class="material-icons prefix" style="color: black">search</i>
+						<input id="icon_prefix" type="text" placeholder="Informe o filme que procura">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col s12 m7">
+					<div class="card">
+						<div class="card-image">
+							<img src="http://download.ultradownloads.com.br/wallpaper/281866_Papel-de-Parede-Grandes-e-Belos-Dragoes_1440x900.jpg" class="responsive-img">
+							<span class="card-title">Card Title</span>
+						</div>
+						<div class="card-content">
+							<p>I am a very simple card. I am good at containing small bits of information.
+								I am convenient because I require little markup to use effectively.</p>
+							</div>
+							<div class="card-action">
+								<a href="#">This is a link</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="fixed-action-btn">
+					<a class="btn-floating btn-large waves-effect waves-light black enviar-pedido">
+						<i class="large material-icons" style="color: yellow">add</i>
+					</a>	
+				</div>
+			</section>
+
+			<!-- FIM AREA DE FILMES-->
+
+
+
+			<!-- AREA DE NOTICIAS-->
+			
+			<section id="dados-noticias" class="hide">
 				<div>
-					<i class="material-icons waves-light waves-effect camera" style="margin-right: 10px;">person</i>
-
-					<!-- <i data-activates="submenu" class="material-icons waves-effect waves-light waves-circle dropdown">person</i> -->	
+					<h5 class="center-align">Informativos do Cine</h5>
 				</div>
-			</div>
 
-		<!-- <div class="grey darken-4 white-text valign-wrapper">
-			<h5 class="titulo">Cine Favela</h5>
-			<div>
-				<i class="material-icons waves-light waves-effect camera">find_in_page</i>
-
-				<i data-activates="submenu" data-gutter="5"
-				data-contrawidth="false"
-				class="material-icons waves-effect waves-light waves-circle dropdown">person</i>	
-			</div>
-		</div> -->
-		
-	</div>
-
-	<ul class="tabs grey darken-4">
-		<li class="tab"><a href="#Home" class="waves-effect white-text"><i class="material-icons">home</i></a></li>
-		<li class="tab"><a href="#Filmes" class="waves-effect white-text"><i class="material-icons">local_movies</i></a></li>
-		<li class="tab"><a href="#Favoritos" class="waves-effect white-text"><i class="material-icons">favorite</i></a></li>
-		<li class="tab"><a href="#Noticias" class="waves-effect white-text"><i class="material-icons">rss_feed</i></a></li>
-	</ul>	
-</header>
-
-<main>
-	<div class="valign-wrapper">
-		<h5>Ultimos Filmes Adicionados</h5>
-	</div>
-
-	<div class="row">
-		<div class="col s12">
-			<div class="card">
-				<div class="card-image waves-effect waves-block waves-light">
-					<div class="video-container">
-						<iframe width="853" height="480" src="https://www.youtube.com/embed/0IdclBMo-vw" frameborder="0" allowfullscreen></iframe>
-					</div>
-				</div>
-				<div class="card-content">
-					<span class="card-title activator grey-text text-darken-4">Nome do Filme<i class="material-icons right">more_vert</i>
-					</span>
-					<div class="icons" style="display: flex;">
-						<p><a href="#"><i class="fa fa-heart fa-2x" style="margin-right: 5px;"></i></a></p>
-						<p><a href="#"><i class="fa fa-facebook-official fa-2x" style="margin-right: 5px;"></i></a></p>
-						<p><a href="#"><i class="fa fa-twitter fa-2x"></i></a></p>
+				<div class="row">
+					<div class="col s12 m7">
+						<div class="card">
+							<div class="card-image">
+								<img src="img/capoeira.jpg" class="responsive-img">
+								<span class="card-title">Aulas de capoeira aberta</span>
+							</div>
+							<div class="card-content">
+								<p>Estão aberta as inscrições para as aulas de capoeira com o Mestre Moreno, campeão paulista e vice campeao mundial da modalidade, as aulas sao gratuitas.</p>
+								</div>
+								<div class="card-action">
+									<a href="#">Fazer Inscrição</a>
+								</div>
+							</div>
+						</div>
 					</div>
 
-				</div>
-				<div class="card-reveal">
-					<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-					<p>Here is some more information about this product that is only revealed once clicked on.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col s12">
-			<div class="card">
-				<div class="card-image waves-effect waves-block waves-light">
-					<div class="video-container">
-						<iframe width="853" height="480" src="https://www.youtube.com/embed/0IdclBMo-vw" frameborder="0" allowfullscreen></iframe>
-					</div>
-				</div>
-				<div class="card-content">
-					<span class="card-title activator grey-text text-darken-4">Nome do Filme<i class="material-icons right">more_vert</i>
-					</span>
-					<div class="icons" style="display: flex;">
-						<p><a href="#"><i class="fa fa-heart fa-2x" style="margin-right: 5px;"></i></a></p>
-						<p><a href="#"><i class="fa fa-facebook-official fa-2x" style="margin-right: 5px;"></i></a></p>
-						<p><a href="#"><i class="fa fa-twitter fa-2x"></i></a></p>
+					<div class="row">
+					<div class="col s12 m7">
+						<div class="card">
+							<div class="card-image">
+								<img src="img/teatro.jpeg" class="responsive-img">
+								<span class="card-title">Aulas de Teatro</span>
+							</div>
+							<div class="card-content">
+								<p>Inscrições aberta para aulas de teatro aos moradores, trazendo cultura e oportunidades de seguir carreira, em parceria com a instituição Wolf Maia do Rio de Janeiro</p>
+								</div>
+								<div class="card-action">
+									<a href="#">Fazer Inscrição</a>
+								</div>
+							</div>
+						</div>
 					</div>
 
-				</div>
-				<div class="card-reveal">
-					<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-					<p>Here is some more information about this product that is only revealed once clicked on.</p>
-				</div>
-			</div>
-		</div>
-	</div>
+
+					<div class="row">
+					<div class="col s12 m7">
+						<div class="card">
+							<div class="card-image">
+								<img src="img/street.jpg" class="responsive-img">
+								<span class="card-title">Street Dance</span>
+							</div>
+							<div class="card-content">
+								<p>Aberta inscrições para aulas de street dance para crianças e jovens, com os professores, Ju Donato e Marcelo Reis, campeões paulistas com a academia 100% Heliopolis</p>
+								</div>
+								<div class="card-action">
+									<a href="#">Fazer Inscrição</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+
+			<!-- AREA DE NOTICIAS-->
+			</main>
 
 
-</main>
 
+		</body>
 
-
-
-</body>
-
-</html>
+		</html>

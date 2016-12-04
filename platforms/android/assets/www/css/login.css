@@ -1,0 +1,12 @@
+.formulario-login .row {
+  margin-bottom: 0px; }
+.formulario-login figure {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+.formulario-login .lembre-me {
+  margin-bottom: 20px !important;
+  margin-top: 0; }
+
+/*# sourceMappingURL=login.css.map */
