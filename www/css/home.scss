@@ -14,7 +14,7 @@
 }
 
 .tabs .indicator {
-    background-color: yellow;
+	background-color: yellow;
 }
 
 .user {
@@ -25,6 +25,15 @@
 	margin-left: .5em;
 }
 
+.tabs .tab a {
+	@include flex;
+	flex-direction: column;
+
+	i {
+		margin-bottom: -16px;
+		margin-top: 5px;
+	}
+}
 
 #slide-out {
 	@include flex;
@@ -44,4 +53,9 @@
 	.modal-content {
 		padding: 0;
 	}
+}
+
+.dinheiro {
+	color : green;
+	margin-right: 2px !important;
 }

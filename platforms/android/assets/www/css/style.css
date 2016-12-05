@@ -38,6 +38,11 @@
     justify-content: flex-start;
     flex-direction: column; }
 
+.modal {
+  padding: .5em 0; }
+  .modal .modal-content {
+    padding: 0; }
+
 html, body {
   height: 100%;
   width: 100%;

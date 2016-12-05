@@ -7,9 +7,14 @@ $(document).ready(function() {
 		var $curtida = $('.badge', this);
 
 		if($curtida.length === 0) {
-			$curtida = $('<span class="new badge">0</span>').appendTo($(this));
+			$curtida = $('<span class="badge">0</span>').appendTo($(this));
 		}
 		$($curtida).text(parseInt($curtida.text()) + 1);
+	});
+
+	$('.favoritar').click(function (event) {
+		event.preventDefault();
+		$(this).css('color', 'gray');
 	});
 
 	$('.home').on('click', function() {
@@ -44,6 +49,11 @@ $(document).ready(function() {
 		$('.dados-home').addClass('hide');
 		$('#dados-filme').addClass('hide');
 		$('#dados-favoritos').addClass('hide');
-		
 	});
+
+
+	$('#adicionar-filme').click(function() {
+		$('.modal-trigger').leanModal();
+	});
+	
 });
