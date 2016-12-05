@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="">
+		<nav class="grey #fff">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo right">
+				<img src="img/logo-3.png" alt="" height="60" width="70" style="margin-left: 2.3em;">
+				</a>
+
+				<ul id="slide-out" class="side-nav grey darken-4">
+					<li>
+						<div class="userView">
+							<a class="user" href="#!user">
+								<img class="circle" src="img/avatar.jpg" height="55px" width="60">
+							</a>
+							<a href="#!name">
+								<span class="white-text name">Marcelo Negreiro</span>
+							</a>
+							<a href="#!email">
+								<span class="white-text email">nnegreiro@cinefavela.com</span>
+							</a>
+						</div>
+					</li>
+					
+					<li>
+						<div class="divider"></div>
+					</li>
+					<li>
+						<a class="waves-effect" href="#!">Configurações</a>
+					</li>
+					<li>
+						<a class="waves-effect" href="index.html">Sair</a>
+					</li>
+				</ul>
+				<a href="#" data-activates="slide-out" class="button-collapse">
+					<i class="material-icons menu">menu</i>
+				</a>
+			</div>
+		</nav>		
+
+
+		<ul class="tabs grey #fff" style="margin-bottom: 10px; padding: .4em 0;">
+			<li class="tab">
+				<a href="#" class="waves-effect waves-light white-text home">
+					<i class="material-icons item-home">home</i><small>Home</small>
+				</a>
+			</li>
+
+			<li class="tab">
+				<a href="#" class="waves-effect waves-light white-text filmes">
+					<i class="material-icons item-home">local_movies</i><small>Filmes</small>
+				</a>
+			</li>
+
+			<li class="tab">
+				<a href="#" class="waves-effect waves-light white-text favoritos">
+					<i class="material-icons item-home">favorite</i><small>Favoritos</small>
+				</a>
+			</li>
+
+			<li class="tab">
+				<a href="#" class="waves-effect waves-light white-text noticias">
+					<i class="material-icons item-home">rss_feeds</i><small>Noticias</small>
+				</a>
+			</li>
+		</ul>	
+	</header>	
+
+
+	<main>
+
+		<section class="dados-home">
+			<div>
+				<h5 class="center-align"> Ultimos Filmes adicionados</h5>
+			</div>
+
+			<div class="row">
+				<div class="col s12">
+					<div class="card recent-card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<div class="video-container">
+								<iframe width="853" height="480" src="https://www.youtube.com/embed/Vo1JPLqyIGE" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<span class="card-title titulo-filme">400 contra 1</span>
+						</div>
+						<div class="card-content">
+							<small class="card-title activator grey-text text-darken-4">Saiba mais ...<i class="material-icons right">more_vert</i></small>
+							<br>
+							<div class="icons" style="display: flex; justify-content: space-around;">
+
+								<p><a href="#"><i class="fa fa-heart-o fa-2x favoritar" style="margin-right: 5px;"></i></a></p>
+								<p><a href="https://twitter.com/intent/tweet"><i class="fa fa-twitter fa-2x"></i></a></p>
+								<p><a href="#"><i class="fa fa-facebook-official fa-2x" style="margin-right: 5px;"></i></a></p>
+								<p><a href="#"><i class="fa fa-thumbs-o-up fa-2x curtir" style="margin-right: 5px;"></i></a></p>
+							</div>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Sinopse<i class="material-icons right">close</i></span>
+							<p>Anos 70, presídio da Ilha Grande, no Rio de Janeiro. Um grupo de presos resolve se unir para lutar por direitos e ideais coletivos. William (Daniel de Oliveira) é um dos líderes deste grupo, que fundou o Comando Vermelho. </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12">
+					<div class="card recent-card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<div class="video-container">
+								<iframe width="853" height="480" src="https://www.youtube.com/embed/SVDqculRPeM" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<span class="card-title">Última parada 174</span>
+						</div>
+						<div class="card-content">
+							<small class="card-title activator grey-text text-darken-4">Saiba mais ...<i class="material-icons right">more_vert</i></small>
+							<br>
+							<div class="icons" style="display: flex; justify-content: space-around;">
+
+								<p><a href="#"><i class="fa fa-heart-o fa-2x favoritar" style="margin-right: 5px;"></i></a></p>
+								<p><a href="#"><i class="fa fa-twitter fa-2x"></i></a></p>
+								<p><a href="#"><i class="fa fa-facebook-official fa-2x" style="margin-right: 5px;"></i></a></p>
+								<p><a href="#"><i class="fa fa-thumbs-o-up fa-2x curtir" style="margin-right: 5px;"></i></a></p>
+							</div>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Sinopse<i class="material-icons right">close</i></span>
+							<p>Sandro testemunha mais uma tragédia, a chacina da Candelária, onde 8 meninos de rua foram mortos pela polícia. Este evento aproxima Sandro e Alessandro, que passam a ter um forte convívio.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12">
+					<div class="card recent-card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<div class="video-container">
+								<iframe width="853" height="480" src="https://www.youtube.com/embed/OWNg_B0rsy0" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<span class="card-title">Infancia Perdida</span>
+						</div>
+						<div class="card-content">
+							<small class="card-title activator grey-text text-darken-4">Saiba mais ...<i class="material-icons right">more_vert</i></small>
+							<br>
+							<div class="icons" style="display: flex; justify-content: space-around;">
+
+								<p><a href="#"><i class="fa fa-heart-o fa-2x favoritar" style="margin-right: 5px;"></i></a></p>
+								<p><a href="#"><i class="fa fa-twitter fa-2x"></i></a></p>
+								<p><a href="#"><i class="fa fa-facebook-official fa-2x" style="margin-right: 5px;"></i></a></p>
+								<p><a href="#"><i class="fa fa-thumbs-o-up fa-2x curtir" style="margin-right: 5px;"></i></a></p>
+							</div>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Sinopse<i class="material-icons right">close</i></span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ipsam dolorem architecto modi dignissimos animi aut voluptas saepe, recusandae eaque nulla repellendus optio impedit voluptatibus corporis alias commodi nemo et?</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+		</section>
+
+		<!-- AREA DE FILMES -->
+
+		<section id="dados-filme" class="hide">
+			<div class="row">
+				<div class="col s12">
+					<div class="input-field">
+						<i class="material-icons prefix" style="color: black">search</i>
+						<input id="icon_prefix" type="text" placeholder="Informe o filme que procura">
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<h5 class="center-align">Os mais vistos</h5>
+			</div>
+
+			<div class="row">
+				<div class="col s12">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<div class="video-container">
+								<iframe width="853" height="480" src="https://www.youtube.com/embed/OWNg_B0rsy0" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<span class="card-title">Infancia Perdida</span>
+						</div>
+						<div class="card-content">
+							<small class="card-title activator grey-text text-darken-4">Saiba mais ...<i class="material-icons">more_vert</i></small>
+							<br>
+							
+							<span class="right"><i class="material-icons" title="Os mais vistos">visibility</i>4200</span>
+
+							<a class="text-right modal-trigger" data-target="efetuar-doacao"><i class="material-icons left dinheiro ">attach_money</i> Contribuir</a>
+							
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Sinopse<i class="material-icons right">close</i></span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ipsam dolorem architecto modi dignissimos animi aut voluptas saepe, recusandae eaque nulla repellendus optio impedit voluptatibus corporis alias commodi nemo et?</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<div class="video-container">
+								<iframe width="853" height="480" src="https://www.youtube.com/embed/B-s2SDi3rkY" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<span class="card-title">Meninos do Morro</span>
+						</div>
+						<div class="card-content">
+							<small class="card-title activator grey-text text-darken-4">Saiba mais ...<i class="material-icons">more_vert</i></small>
+							<br>
+							<span class="right"><i class="material-icons" title="Os mais vistos">visibility</i>4200</span>
+
+							<span class="text-right"><i class="material-icons left dinheiro" title="Os mais vistos">attach_money</i> Contribuir</span>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Sinopse<i class="material-icons right">close</i></span>
+							<p>Falcão - Meninos do Tráfico é um documentário brasileiro produzido pelo rapper MV Bill, pelo seu empresário Celso Athayde e pelo centro de audiovisual da Central Única das Favelas que retrata a vida de jovens de favelas brasileiras envolvidos no tráfico de drogas.</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<div class="video-container">
+								<iframe width="853" height="480" src="https://www.youtube.com/embed/-R8CgVpBYBY" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<span class="card-title">Guerra do Tráfico</span>
+						</div>
+						<div class="card-content">
+							<small class="card-title activator grey-text text-darken-4">Saiba mais ...<i class="material-icons">more_vert</i></small>
+							<br>
+							<span class="right"><i class="material-icons" title="Os mais vistos">visibility</i>4200</span>
+
+							<span class="text-right"><i class="material-icons left dinheiro" title="Os mais vistos">attach_money</i> Contribuir</span>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Sinopse<i class="material-icons right">close</i></span>
+							<p>Imagens inéditas. De um lado a polícia, do outro, traficantes fortemente armados e prontos para morrer em combate. Este documentário mostra a ação de criminosos do Rio de Janeiro e o trabalho de policiais no combate ao tráfico de drogas, em uma guerra sem fim.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+
+			<div class="fixed-action-btn">
+				<a href="#novo-filme" id="adicionar-filme" class="btn-floating btn-large waves-effect waves-light black modal-trigger" data-target="#novo-filme">
+					<i class="large material-icons" style="color: yellow">add</i>
+				</a>	
+			</div>
+		</section>
+
+		<!-- FIM AREA DE FILMES-->
+
+		<!-- AREA DE FAVORITOS-->
+		<section id="dados-favoritos" class="hide">
+			<div>
+				<h5 class="center-align">Meus Favoritos</h5>
+			</div>
+
+			<div class="row">
+				<div class="col s12">
+					<div class="card recent-card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<div class="video-container">
+								<iframe width="853" height="480" src="https://www.youtube.com/embed/SVDqculRPeM" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<span class="card-title">Última parada 174</span>
+						</div>
+						<div class="card-content">
+							<small class="card-title activator grey-text text-darken-4">Saiba mais ...<i class="material-icons right">more_vert</i></small>
+							<br>
+							<div class="icons" style="display: flex; justify-content: space-around;">
+
+								<p><a href="#"><i class="fa fa-heart fa-2x favoritar" style="margin-right: 5px; color: red;"></i></a></p>
+								<p><a href="#"><i class="fa fa-twitter fa-2x"></i></a></p>
+								<p><a href="#"><i class="fa fa-facebook-official fa-2x" style="margin-right: 5px;"></i></a></p>
+								<p><a href="#"><i class="fa fa-thumbs-o-up fa-2x curtir" style="margin-right: 5px;"></i></a></p>
+							</div>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Sinopse<i class="material-icons right">close</i></span>
+							<p>Sandro testemunha mais uma tragédia, a chacina da Candelária, onde 8 meninos de rua foram mortos pela polícia. Este evento aproxima Sandro e Alessandro, que passam a ter um forte convívio.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!-- AREA DE FAVORITOS-->
+
+
+		<!-- AREA DE NOTICIAS-->
+
+		<section id="dados-noticias" class="hide">
+			<div>
+				<h5 class="center-align">Informativos do Cine</h5>
+			</div>
+
+			<div class="row">
+				<div class="col s12 m7">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/capoeira.jpg" class="responsive-img">
+							<span class="card-title">Aulas de capoeira aberta</span>
+						</div>
+						<div class="card-content">
+							<p>Estão aberta as inscrições para as aulas de capoeira com o Mestre Moreno, campeão paulista e vice campeao mundial da modalidade, as aulas sao gratuitas.</p>
+						</div>
+						<div class="card-action">
+							<a href="#">Fazer Inscrição</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col s12 m7">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/teatro.jpeg" class="responsive-img">
+							<span class="card-title">Aulas de Teatro</span>
+						</div>
+						<div class="card-content">
+							<p>Inscrições aberta para aulas de teatro aos moradores, trazendo cultura e oportunidades de seguir carreira, em parceria com a instituição Wolf Maia do Rio de Janeiro</p>
+						</div>
+						<div class="card-action">
+							<a href="#">Fazer Inscrição</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col s12 m7">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/street.jpg" class="responsive-img">
+							<span class="card-title">Street Dance</span>
+						</div>
+						<div class="card-content">
+							<p>Aberta inscrições para aulas de street dance para crianças e jovens, com os professores, Ju Donato e Marcelo Reis, campeões paulistas com a academia 100% Heliopolis</p>
+						</div>
+						<div class="card-action">
+							<a href="#">Fazer Inscrição</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- AREA DE NOTICIAS-->
+
+
+
+	</main>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+<div id="novo-filme" class="modal">
+	<div class="modal-content">
+		<h6 class="center">Increver Filme</h6>
+		<div class="row">
+			<form class="col s12">
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="nome" type="text">
+						<label for="nome-filme">Nome do Filme</label>
+					</div>
+
+					<div class="input-field col s12">
+						<input id="diretor" type="text">
+						<label for="diretor">Diretor</label>
+					</div>
+
+					<div class="input-field col s12">
+						<input id="url" type="text">
+						<label for="url-filme">URL</label>
+					</div>
+
+					<div class="input-field col s12">
+						<input id="nome" type="text">
+						<label for="nome-filme">Nome do Filme</label>
+					</div>
+
+					<div class="input-field col s12">
+						<input id="genero" type="text">
+						<label for="genero">Genero</label>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class=" modal-action modal-close waves-effect waves-gray btn-flat grey enviar-dados-do-filme">Enviar</a>
+	</div>
+</div>
+
+<div id="efetuar-doacao" class="modal">
+	<div class="modal-content">
+		<h6 class="center">Doar para o Artista</h6>
+		
+
+		<div class="input-field col s12">
+			<select>
+				<option value="1">R$ 100,00</option>
+				<option value="2">R$ 200,00</option>
+				<option value="3">R$ 300,00</option>
+			</select>
+			
+		</div>
+		
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class=" modal-action modal-close waves-effect waves-gray btn-flat grey enviar-doacao">Enviar</a>
+	</div>
+</div>
+
+
+</html>

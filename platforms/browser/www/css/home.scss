@@ -1,0 +1,60 @@
+@mixin flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.topo-fixo {
+	width: 100%;
+}
+
+.titulo {
+	margin-left: 1.3rem;
+	margin-right: auto;
+}
+
+.tabs .indicator {
+	background-color: yellow;
+}
+
+.user {
+	margin-top: 10px;
+}
+
+.menu {
+	margin-left: .5em;
+}
+
+.tabs .tab a {
+	@include flex;
+	flex-direction: column;
+
+	i {
+		margin-bottom: -16px;
+	}
+}
+
+#slide-out {
+	@include flex;
+	justify-content: flex-start !important;
+	flex-direction: column;
+
+	.userView {
+		@include flex;
+		justify-content: flex-start;
+		flex-direction: column;
+	}
+}
+
+.modal {
+	padding: .5em 0;
+
+	.modal-content {
+		padding: 0;
+	}
+}
+
+.dinheiro {
+	color : green;
+	margin-right: 2px !important;
+}

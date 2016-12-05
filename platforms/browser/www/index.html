@@ -1,71 +1,125 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="icons/material.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
 
-<html>
-    <head>
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" href="css/materialize.min.css">
-        <title>Hello World</title>
-    </head>
+	<main>
+		<div class="formulario-login">
+			<div class="row">
+				<form class="col s12">
 
-    <style>
-        html, body {
-            height: 100%;
-            width: 100%;
-            padding: 0;
-            margin: 0;
-        }
-    </style>
-    <body>
+					<div class="row">
+						<figure>
+							<img src="img/logo.png" alt="" height="150px" width="150px" style="display: flex; align-items: center; justify-content: center;" />
+						</figure>
+					</div>
 
-    <div class="col s12 z-depth-4 card-panel">
-      <form class="login-form">
-        <div class="row">
-          <div class="input-field col s12 center">
-            <img src="images/login-logo.png" alt="" class="circle responsive-img valign profile-image-login">
-            <p class="center login-form-text">Material Design Admin Template</p>
-          </div>
-        </div>
-        <div class="row margin">
-          <div class="input-field col s12">
-            <i class="mdi-social-person-outline prefix"></i>
-            <input id="username" type="text">
-            <label for="username" class="center-align">Username</label>
-          </div>
-        </div>
-        <div class="row margin">
-          <div class="input-field col s12">
-            <i class="mdi-action-lock-outline prefix"></i>
-            <input id="password" type="password">
-            <label for="password">Password</label>
-          </div>
-        </div>
-        <div class="row">          
-          <div class="input-field col s12 m12 l12  login-text">
-              <input type="checkbox" id="remember-me">
-              <label for="remember-me">Remember me</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <a href="home.html" class="btn waves-effect waves-light col s12">Login</a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s6 m6 l6">
-            <p class="margin medium-small"><a href="page-register.html">Register Now!</a></p>
-          </div>
-          <div class="input-field col s6 m6 l6">
-              <p class="margin right-align medium-small"><a href="page-forgot-password.html">Forgot password ?</a></p>
-          </div>          
-        </div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="email" type="email" class="validate">
+							<label for="email">Email</label>
+						</div>
+					</div>
 
-      </form>
-    </div>
-        <!-- <script type="text/javascript" src="cordova.js"></script> -->
-        <script src="jquery.min.js"></script>
-        <script src="materialize.min.js"></script>
-    </body>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="password" type="password" class="validate">
+							<label for="password">Senha</label>
+						</div>
+					</div>
+
+					<div class="row">          
+						<div class="input-field col s12 m12 l12 login-text lembre-me">
+							<input type="checkbox" id="remember-me">
+							<label for="remember-me ">Lembre me</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="input-field col s12">
+							<a href="home.html" class="btn waves-effect waves-light col s12 grey darken-4">Login</a>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="input-field col s6 m6 l6">
+							<p class="margin medium-small"><a class="cadastrarUsuario modal-trigger" data-target="cadastrarUsuario" href="#cadastrarUsuario">Cadastre-se</a></p>
+						</div>
+						<div class="input-field col s6 m6 l6">
+							<p class="margin right-align medium-small "><a href="#modalRecuperarSenha" class="modal-trigger recuperarSenha" data-target="modalRecuperarSenha" id="recuperarSenha">Esqueceu a Senha</a></p>
+						</div>          
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+</body>
+
+<div id="modalRecuperarSenha" class="modal">
+	<div class="modal-content">
+		<h4 class="center">Recuperar Senha</h4>
+		<p class="center">Informe o e-mail para recuperar a senha</p>
+
+		<form action="">
+			<div class="row">
+				<div class="input-field col s12">
+					<input id="email" type="email" class="validate">
+					<label for="email">Email</label>
+				</div>
+			</div>
+		</form>
+
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat enviar-dados-email">Enviar</a>
+	</div>
+</div>
+
+<div id="cadastrarUsuario" class="modal">
+	<div class="modal-content">
+		<h4 class="center">Cadastro de Usuario</h4>
+
+		<form action="">
+			<div class="row">
+				<div class="input-field col s12">
+					<input id="email" type="email" class="validate" placeholder="Informe o e-mail">
+					<label for="email"></label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s12">
+					<input id="senha" type="password" class="validate" placeholder="Informe uma senha valida">
+					<label for="email"></label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s12">
+					<input id="senha" type="password" class="validate" placeholder="Confirmar senha">
+					<label for="confirmar-senha"></label>
+				</div>
+			</div>
+		</form>
+
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat enviar-dados-de-usuario">Enviar</a>
+	</div>
+</div>
+
 </html>
