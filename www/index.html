@@ -22,7 +22,7 @@
 
 					<div class="row">
 						<figure>
-							<img src="http://1.bp.blogspot.com/-0os_tQiVLag/UCm3vh5ywPI/AAAAAAAAAXs/35gXhICSbBM/s1600/logo.png" alt="" height="150px" width="150px" style="display: flex; align-items: center; justify-content: center;" />
+							<img src="img/logo.png" alt="" height="150px" width="150px" style="display: flex; align-items: center; justify-content: center;" />
 						</figure>
 					</div>
 
@@ -55,10 +55,10 @@
 
 					<div class="row">
 						<div class="input-field col s6 m6 l6">
-							<p class="margin medium-small"><a href="page-register.html">Cadastre-se</a></p>
+							<p class="margin medium-small"><a href="#">Cadastre-se</a></p>
 						</div>
 						<div class="input-field col s6 m6 l6">
-							<p class="margin right-align medium-small "><a href="page-forgot-password.html" >Esqueceu a Senha</a></p>
+							<p class="margin right-align medium-small "><a href="#modalRecuperarSenha" class="" modal-trigger" id="recuperarSenha">Esqueceu a Senha</a></p>
 						</div>          
 					</div>
 				</form>
@@ -66,4 +66,25 @@
 		</div>
 	</main>
 </body>
+
+<div id="modalRecuperarSenha" class="modal">
+	<div class="modal-content">
+		<h4>Recuperar Senha</h4>
+		<p>Informe o e-mail para recuperar a senha</p>
+
+		<form action="">
+			<div class="row">
+				<div class="input-field col s12">
+					<input id="email" type="email" class="validate">
+					<label for="email">Email</label>
+				</div>
+			</div>
+		</form>
+
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Enviar</a>
+	</div>
+</div>
+
 </html>

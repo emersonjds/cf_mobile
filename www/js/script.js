@@ -17,6 +17,23 @@ $(document).ready(function() {
 		$(this).css('color', 'gray');
 	});
 
+	$('select').material_select();
+
+	$('.enviar-doacao').click(function() {
+		Materialize.toast('Sua doação foi enviada', 3000);
+	});
+
+	$('#recuperarSenha').click(function (event) {
+		event.preventDefault();
+		$('.modal-trigger').leanModal();
+	});
+
+	$('.dinheiro').click(function(event) {
+		console.log('teste');
+		event.preventDefault();
+		$('.modal-trigger').leanModal();
+	});
+
 	$('.home').on('click', function() {
 		$('.dados-home').removeClass('hide');
 		$('.dados-home').addClass('show');
