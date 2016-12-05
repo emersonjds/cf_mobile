@@ -12,29 +12,27 @@
 	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="css/style.css">
-	
-
-	
-
 </head>
 
 <body>
-	<header class="grey darken-4">
-		<nav class="grey darken-4">
+	<header class="">
+		<nav class="grey #fff">
 			<div class="nav-wrapper">
-				<a href="#" class="brand-logo center">Logo</a>
+				<a href="#" class="brand-logo right">
+				<img src="img/logo-3.png" alt="" height="60" width="100" style="margin-left: 1.8em;">
+				</a>
 
 				<ul id="slide-out" class="side-nav grey darken-4">
 					<li>
 						<div class="userView">
 							<a class="user" href="#!user">
-								<img class="circle" src="http://uc48.net/europeana/images/fpo_avatar.png" height="40px" width="40">
+								<img class="circle" src="img/avatar.jpg" height="55px" width="60">
 							</a>
 							<a href="#!name">
-								<span class="white-text name">John Doe</span>
+								<span class="white-text name">Marcelo Negreiro</span>
 							</a>
 							<a href="#!email">
-								<span class="white-text email">jdandturk@gmail.com</span>
+								<span class="white-text email">nnegreiro@cinefavela.com</span>
 							</a>
 						</div>
 					</li>
@@ -46,7 +44,7 @@
 						<a class="waves-effect" href="#!">Configurações</a>
 					</li>
 					<li>
-						<a class="waves-effect" href="#!">Sair</a>
+						<a class="waves-effect" href="index.html">Sair</a>
 					</li>
 				</ul>
 				<a href="#" data-activates="slide-out" class="button-collapse">
@@ -56,7 +54,7 @@
 		</nav>		
 
 
-		<ul class="tabs grey darken-4">
+		<ul class="tabs grey #fff" style="margin-bottom: 10px; padding: .4em 0;">
 			<li class="tab">
 				<a href="#" class="waves-effect waves-light white-text home">
 					<i class="material-icons item-home">home</i><small>Home</small>
@@ -90,8 +88,6 @@
 			<div>
 				<h5 class="center-align"> Ultimos Filmes adicionados</h5>
 			</div>
-
-
 
 			<div class="row">
 				<div class="col s12">
@@ -189,7 +185,7 @@
 			</div>
 
 			<div>
-			<h5 class="center-align">Os mais vistos</h5>
+				<h5 class="center-align">Os mais vistos</h5>
 			</div>
 
 			<div class="row">
@@ -207,7 +203,7 @@
 							
 							<span class="right"><i class="material-icons" title="Os mais vistos">visibility</i>4200</span>
 
-							<span class="text-right"><i class="material-icons left dinheiro" title="Os mais vistos">attach_money</i> Contribuir</span>
+							<a class="text-right modal-trigger" data-target="efetuar-doacao"><i class="material-icons left dinheiro ">attach_money</i> Contribuir</a>
 							
 						</div>
 						<div class="card-reveal">
@@ -417,5 +413,26 @@
 		<a href="#!" class=" modal-action modal-close waves-effect waves-gray btn-flat grey enviar-dados-do-filme">Enviar</a>
 	</div>
 </div>
+
+<div id="efetuar-doacao" class="modal">
+	<div class="modal-content">
+		<h6 class="center">Doar para o Artista</h6>
+		
+
+		<div class="input-field col s12">
+			<select>
+				<option value="1">R$ 100,00</option>
+				<option value="2">R$ 200,00</option>
+				<option value="3">R$ 300,00</option>
+			</select>
+			
+		</div>
+		
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class=" modal-action modal-close waves-effect waves-gray btn-flat grey enviar-doacao">Enviar</a>
+	</div>
+</div>
+
 
 </html>

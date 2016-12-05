@@ -23,7 +23,24 @@ $(document).ready(function() {
 		Materialize.toast('Sua doação foi enviada', 3000);
 	});
 
-	$('#recuperarSenha').click(function (event) {
+	$('.enviar-dados-do-filme').click(function() {
+		Materialize.toast('Dados cadastrados com sucesso', 3000);
+	});
+
+	$('.enviar-dados-email').click(function() {
+		Materialize.toast('Dados enviados com sucesso', 3000);
+	});
+
+	$('.enviar-dados-de-usuario').click(function() {
+		Materialize.toast('Cadastro efetuado com sucesso', 3000);
+	});
+
+	$('.cadastrarUsuario').click(function (event) {
+		event.preventDefault();
+		$('.modal-trigger').leanModal();
+	});
+
+	$('.recuperarSenha').click(function (event) {
 		event.preventDefault();
 		$('.modal-trigger').leanModal();
 	});
