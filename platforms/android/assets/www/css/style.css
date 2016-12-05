@@ -25,6 +25,15 @@
 .menu {
   margin-left: .5em; }
 
+.tabs .tab a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .tabs .tab a i {
+    margin-bottom: -16px;
+    margin-top: 5px; }
+
 #slide-out {
   display: flex;
   align-items: center;
@@ -42,6 +51,10 @@
   padding: .5em 0; }
   .modal .modal-content {
     padding: 0; }
+
+.dinheiro {
+  color: green;
+  margin-right: 2px !important; }
 
 html, body {
   height: 100%;
